@@ -1,0 +1,16 @@
+// ===================================================|
+// Functions: UNITS
+
+// -------------------------| Progressive calc
+@function get-progressive-calc(
+  $min-obj-size,
+  $max-obj-size,
+  $min-vp,
+  $max-vp,
+  $vp-unit: vw
+) {
+  @return calc(
+    #{$min-obj-size} + #{strip-unit($max-obj-size - $min-obj-size)} *
+      ((100#{$vp-unit} - #{$min-vp}) / #{strip-unit($max-vp - $min-vp)})
+  );
+}

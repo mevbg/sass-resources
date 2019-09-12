@@ -1,0 +1,24 @@
+//====================================================|
+// Mixins: POSITIONS
+
+// -------------------------| Absolute centered
+@mixin absolute-centered($type: absolute, $pos: 50%) {
+  position: $type;
+  top: $pos;
+  left: $pos;
+  transform: translate(-50%, -50%);
+}
+
+// -------------------------| Absolute centered X
+@mixin absolute-centered-x($type: absolute, $pos: 50%) {
+  position: $type;
+  left: $pos;
+  transform: translateX(-50%);
+}
+
+// -------------------------| Absolute centered Y
+@mixin absolute-centered-y($type: absolute, $pos: 50%) {
+  position: $type;
+  top: $pos;
+  transform: translateY(-50%);
+}

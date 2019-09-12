@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - node
+branches:
+  only:
+    - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
+deploy:
+  - provider: npm
+    email:
+      secure: Vk+hYVMkMn0vg/Y/pxXT/VkqbktEYNqsjneDlzv92QGeYND+ODww8M1YGtBRit7VU/N/7M1QFUPKdZQvpiZKy59FwSI0O/9GpWtVWSr55YpN4MQyqKOOU2vgw2Q6OvwOOPdNjE6sA4/+zTVW6xx8PmsIKyu5PGvMRl7DZVHHMKeIMmCsFVtDXfeZiTeKrVRvN8fqx7UZgW1sDJBYHgPVOUS2RoPT7f5T1afl0+AQKkeSNGZmiNgbdeAuFKD9J84t5nh4PemBe9m22MLvcpRPcOU6V4kQheSgw5fD7HPkf/H3CfRkSVMPb/5BB+GRqxFTpu76iCzlRRbNRMpcRjQhOUH2AhA9mIQnoAOiiXzbNu2DbpfSHYBzRZt1OXB1ESSVtm15wNlXN1GugLznOZxLMO/uZQzt8sAjtZEjPsws/VBQcbNgYaAj/QhuMPH4tLv2qgHRLcSn45nFi1T2sJiQ21OJkuh7eTCpvqEoXRPmH1atoJWpPFXMu4Lzzepk+R44yyT8uCA9wg7zyAku+94vG8hDBujLpLNTUVvv6BCBvGtEnQ0y4/BNd3jxE48qqHf63ok5cLDJTBDWS5esC9zHMjoB/d0UcaPCOnW+x4LjvAgkejBW39JPKENaSu75t8QzI/FObjowebPyk0cYvVA6V1SwxFt8QbSfJy8MNKoYZ2I=
+    api_key:
+      secure: bgarkVGJjlv/waML5fJjYFfd38Bj0O8ZzcpEuGjjHkJHbL1bysuIZD9ol3riRBnzv8g+OGfMZzpbTpH9rLg/kb6EeXmsVd98w4Ce4WfeyTkwV+GBviT9emapcXRn2FRWruSg9bw52iqPELNCOSMemhmMUxdFdTNrz2Yx8yw2nYVUK15icWKg80IP9+D3MsAs2Wq+OCYKtKBNLM1RWVyUBNxAWKpDxfRzHVbVeK6gL2umYv0PIf/F2/i7bXu2JlUrTD+cKPywCJtW64c25R4RoYEzJRrkJjcCZgFDrl98r0OWcFDoquIwkjwiynH4QQ7WF2FCv2rENxZH+5jMizj8UB19OETysngL0Y0VND+u9/H7bVD59s3pb30eDcumV6XopJNFvfVw/LnhVj3RbauLiwJBcOHvtwNfBtfDLcFM2DM/xTGwaT/645HTWyUidSo8ax9LBxOSd+QsA/tp2uM+tPagqtXgrUXQ5vEOPqg7p2Y+IX5QxhPu6hj5GUuGUL9OzMg01mRbHF+QpknUZMltH2VmyK1chKM8NFXIxfxgF2hmmZc+xPCtJJVDihTx8rp5uuPS1ry3fKvVFugFeUNUkPouNb0bf+dzYdJqaLXQ3zut8Xirho1xaubZlBCryS5gikN8Xe3rARYHzfWoYBloiKrtsNV/lMZHZySsdZ0Cqww=
+    on:
+      tags: true
+  - provider: releases
+    api_key:
+      secure: GoNJVugQeU/uy+pVuxeGlw5hXn9OZ/z5L9UXHiw6J8xRwTgh89jL71pY2Tff0bd5Vgawrwru3XxnDKLwtkMg5LmQbUlViKmkCuabVqnNYNkmT+GV+zo2yFJiLRBSl7yOBcX0YYlwMw5UBlVjsZNvH0sEVFADy2arCWwlq3lvLio4IBwqnOyss8MoZBodmi0xlyoeacd0ymJpFsDiWnyti1j2Jnb3WwT7Q0ve67ZEwwiiu7MPqEV9zCS0KwZYtlb+Gmxa2scrRIK3PXo6OoUvngKWT0k1oumYyMnk+M9f1KzxjoVSM6fk24hhqhtzRdmASp0z9bhu289kqtecubq0wWD3qzxhQaqdXRkX4C1cJODW6foHG2RD1mmXUmb2arwkgwGvpNXnt7pTemjeUgjYSYmYnj/e43R3u6UiJY70A5ZJNeTWDcwIYHcZYgVYA7XsyqLmwbZGQ+eSNP0MivZHb1xkLHApkZr/WpvgOkAj+P6wK5mK7LB8/JHROnPif2XdEj87JY2ReXfGSk4os9jNHk9wMd+FKad6WHfvvzWaOd8jKUNgHxb1IUc2D2XGgXuN+4zyjoBHbIvEyP+B9mE8+FrCklcZB8X8lMRpBISG6H7dn8GQPsFLrsPMuJX4PZHrippvFDWZQbOSxViXE2btX4SUYxBvxtkQz4Ygsz5fyFI=
+    skip_cleanup: true
+    on:
+      tags: true

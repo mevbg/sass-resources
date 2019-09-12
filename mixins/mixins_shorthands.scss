@@ -1,0 +1,50 @@
+// ===================================================|
+// Mixins: SHORTHANDS
+
+// -------------------------| Positions
+@mixin position-stretched($type: absolute) {
+  position: $type;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+// -------------------------| Dimensions
+@mixin dimensions-square($value) {
+  width: $value;
+  height: $value;
+}
+
+// -------------------------| Padding
+@mixin padding-v($value) {
+  padding-top: $value;
+  padding-bottom: $value;
+}
+
+@mixin padding-h($value) {
+  padding-right: $value;
+  padding-left: $value;
+}
+
+// -------------------------| Margin
+@mixin margin-v($value) {
+  margin-top: $value;
+  margin-bottom: $value;
+}
+
+@mixin margin-h($value) {
+  margin-right: $value;
+  margin-left: $value;
+}
+
+// -------------------------| Border
+@mixin border-v($value) {
+  border-top: $value;
+  border-bottom: $value;
+}
+
+@mixin border-h($value) {
+  border-right: $value;
+  border-left: $value;
+}
