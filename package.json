@@ -1,0 +1,16 @@
+{
+  "name": "sass-resources",
+  "version": "1.0.0",
+  "description": "Predefined mixins and functions for Sass",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:martinmethod/sass-resources.git"
+  },
+  "author": {
+    "name": "Martin Metodiev",
+    "email": "metodiev.martin@gmail.com",
+    "url": "http://martinmetodiev.com"
+  },
+  "license": "MIT",
+  "private": false
+}

@@ -1,0 +1,22 @@
+// ===================================================|
+// Mixins: FORMS
+
+// -------------------------| Input placeholder
+@mixin input-placeholder($col, $style: italic) {
+  &:-moz-placeholder {
+    color: $col;
+    font-style: $style;
+  }
+  &::-moz-placeholder {
+    color: $col;
+    font-style: $style;
+  }
+  &:-ms-input-placeholder {
+    color: $col;
+    font-style: $style;
+  }
+  &::-webkit-input-placeholder {
+    color: $col;
+    font-style: $style;
+  }
+}

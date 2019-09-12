@@ -1,0 +1,12 @@
+// ===================================================|
+// Functions: COLORS
+
+// -------------------------| Light
+@function light($color, $percent) {
+  @return mix(#fff, $color, $percent);
+}
+
+// -------------------------| Dark
+@function dark($color, $percent) {
+  @return mix(#000, $color, $percent);
+}

@@ -1,0 +1,25 @@
+// ===================================================|
+// Functions: UNITS
+
+// -------------------------| Strip unit
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+// -------------------------| Get em/rem unit
+@function em($num, $font-size) {
+  @return #{strip-unit($num) / strip-unit($font-size)}em;
+}
+
+@function rem($num) {
+  @return #{strip-unit($num) / strip-unit($font-size)}rem;
+}
+
+// -------------------------| Get screen percent
+@function get-screen-percent($width, $screen) {
+  @return unquote('#{$width * 100 / $screen}%');
+}
