@@ -1,7 +1,17 @@
 {
   "name": "sass-resources",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Predefined mixins and functions for Sass",
+  "keywords": [
+    "styles",
+    "sass",
+    "scss",
+    "resources",
+    "helpers",
+    "assets",
+    "mixins",
+    "functions"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:martinmethod/sass-resources.git"
