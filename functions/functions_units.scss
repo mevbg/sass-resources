@@ -11,12 +11,25 @@
 }
 
 // -------------------------| Get em/rem unit
-@function em($num, $font-size) {
-  @return #{strip-unit($num) / strip-unit($font-size)}em;
+@function em($num, $font-size: false) {
+  @return get-font-unit($num, $font-size, em);
 }
 
-@function rem($num) {
-  @return #{strip-unit($num) / strip-unit($font-size)}rem;
+@function rem($num, $font-size: false) {
+  @return get-font-unit($num, $font-size, rem);
+}
+
+@function get-font-unit($num, $font-size, $unit) {
+  $fs: 10px;
+
+  @if $font-size {
+    $fs: $font-size;
+  }
+  @else if $base-html-font-size { // make sure to define this variable on your own
+    $fs: $base-html-font-size;
+  }
+
+  @return #{strip-unit($num) / strip-unit($fs)}#{$unit};
 }
 
 // -------------------------| Get screen percent

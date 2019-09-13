@@ -2,7 +2,7 @@
 // Functions: Z-INDEXES
 
 // -------------------------| Generator
-@function z-index($keys, $map) {
+@function z-index($map, $keys) {
   $found-index: null;
 
   @each $key in $keys {
@@ -18,6 +18,6 @@
 }
 
 // -------------------------| Server
-@function z($keys...) {
-  @return z-index($keys);
+@function z($map, $keys...) {
+  @return z-index($map, $keys);
 }
