@@ -14,12 +14,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:martinmethod/sass-resources.git"
+    "url": "git@github.com:mevbg/sass-resources.git"
   },
   "author": {
-    "name": "Martin Metodiev",
-    "email": "metodiev.martin@gmail.com",
-    "url": "http://martinmetodiev.com"
+    "name": "Martin Metodiev • Mev",
+    "email": "martin@mev.bg",
+    "url": "https://mev.bg"
   },
   "license": "MIT",
   "private": false
